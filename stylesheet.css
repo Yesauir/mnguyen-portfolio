@@ -1,18 +1,22 @@
+
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
 }
 
+h2{
+  font-family: 'Raleway';
+}
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: auto;
+
 }
 
 .bgimg-1 {
-  background-image: url("mySelf.jpg");
-  min-height: 50%;
-  width:10;
+  background-image: url("mySelf4.jpg");
+  min-height: 100%;
 }
