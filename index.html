@@ -13,14 +13,15 @@
      <!-- Here are where the icons come from! -->
      <script src="https://kit.fontawesome.com/a26fc7337b.js" crossorigin="anonymous"></script>
 
+     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
 
 <body>
 
   <!-- Navbar (sitting on top) -->
-  <div class="top"> <!--Everything within this is a child of w3-top-->
-    <div class="bar" id="myNavbar">  <!--this specific div has a unique ID and IS myNavbar AND EVERYTHING BELOW IS PART OF W3-BAR-->
+  <div class="top"> <!--Everything within this is a child of top-->
+    <div class="bar" id="myNavbar">  <!--this specific div has a unique ID and IS myNavbar AND EVERYTHING BELOW IS PART OF BAR-->
       <a class="bar-item button" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i>
       </a>
@@ -29,27 +30,64 @@
       <a href="#portfolio" class="bar-item button"><i class="fa fa-th"></i> PORTFOLIO</a>
       <a href="#contact" class="bar-item button"><i class="fa fa-envelope"></i> CONTACT</a>
       <div class="switch button">
-        <div class="flicker">
-          <div class="moon"></div>
-        </div>
+        <div class="flicker"></div>
+        <div class="moon"></div>
       </div>
     </div>
   </div>
 
-<br>
-  <h1>
-    Welcome
-  </h1>
-  <h2>
-    I'm Matthew Nguyen
-  </h2>
-    <!-- <div class =bgimg-->
-    </div>
-     <div class="back"> </div>
-     <div class="heart"> </div>
-<p>
-ipos SDFASDFADFADFADF
-</p>
+<br/>
+<br/>
+
+<section class = "main">
+  <div class ="main-text">
+    <h1>Matthew Nguyen</h1>
+    <p>Welcome to my Page!</p>
+    <br/>
+    <p>I am a Software Developer, Life Long Learner, and Achiever based out of Denver, CO.</p>
+    <br/>
+    <a href="">contact me</a>
+  </div>
+
+  <div class="hero-image">
+    <div class="cube" id="C++"></div>
+    <div class="cube" id="CSS"></div>
+    <div class="cube" id="SQL"></div>
+    <div class="cube" id="HTML"></div>
+  </div>
+
+</section>
+
+<section class="sub-section">
+<div class = "square">
+  <h2>My Project 1</h2>
+  <p>Heres a description</p>
+  <br/>
+  <a href="">Check it out</a>
+</div>
+<div class = "square">
+  <h2>My Project 2</h2>
+  <p>Heres a description</p>
+  <br/>
+  <a href="">Check it out</a>
+</div>
+<div class = "square">
+  <h2>My Project 3</h2>
+  <p>Heres a description</p>
+  <br/>
+  <a href="">Check it out</a>
+</div>
+<div class = "square">
+  <h2>My Project 4</h2>
+  <p>Heres a description</p>
+  <br/>
+  <a href="">Check it out</a>
+</div>
+</section>
+
+<footer id="contact">
+  <p>Matthew.trinity@gmail.com</p>
+</footer>
 
 <script src="scripts.js"></script>
 </body>

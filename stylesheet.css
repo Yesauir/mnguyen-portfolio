@@ -3,12 +3,39 @@ body, html {
   transition: 0.3s;
   height: 100%;
   color: #777;
+  /* color:rgb(57, 57, 57); */
   line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+
+h1{
+  font-size: 60px;
+  line-height: 60px;
+  margin: 10px 0;
+  font-weight: 700;
 }
 
 h2{
-  font-family: 'Raleway';
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  margin: 50px 0 10px 0;
 }
+
+p{
+  margin: 0px;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(162, 0, 255);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -55,11 +82,12 @@ h2{
 }
 
 .switch{
-  position: relative; /*This is needed for flicker shape*/
+
   width: 80px;
   height: 40px;
   border-radius: 20px;
-  background-color: rgb(39, 38, 38);
+  background-color: rgb(132, 131, 131)!important;
+  position: relative; /*This is needed for flicker shape*/
 }
 
 .flicker{
@@ -70,7 +98,7 @@ h2{
   position: absolute;
   top: 5px;
   left: 5px;
-
+  transition: 0.3s;
   box-shadow:
   inset 4px 4px 4px rgb(255,255,255),
   inset -4px -4px 4px rgb(195 193 198/90%);
@@ -83,7 +111,7 @@ h2{
   border-radius: 10px;
   box-shadow: 4px 4px 0 0 rgb(255,255,255);
   position: absolute;
-  top: 1px;
+  top: 5px;
   left: 45px;
 }
 
@@ -94,6 +122,58 @@ h2{
 
 .dark{
   background-color: rgb(57,57,57);
-  color: white;
+  /*color: white;*/
   transition: 0.3s;
+}
+
+.dark > * { /*All Children to have color white*/
+  color: white;
+}
+
+.dark .flicker{
+  transform: translateX(40px);
+}
+
+.main{
+  height: 80vh; /*80% of my browser height*/
+}
+
+.main-text{
+  padding: 30px;
+}
+
+.square{
+  width: 98%;
+  height: 350px;
+  background-color: rgb(244, 241, 241);; /*Comment this out later*/
+  text-align: center;
+  margin: 1%;
+
+}
+
+.dark .square{
+  background-color: rgb(71, 71, 71);
+}
+
+.sub-section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+
+}
+
+@media only screen and (min-width: 970px){
+  .main-text{
+      width: 50%;
+  }
+  .square{
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
 }
