@@ -138,11 +138,14 @@ a {
   height: 80vh; /*80% of my browser height*/
   display: flex;
   flex-direction: row;
-
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
 
 .main-text{
   padding: 30px;
+  margin-bottom: 100px;
 }
 
 .square{
@@ -167,6 +170,8 @@ a {
   position: relative;
   width: 50%;
   height: 350px;
+  display:block;
+  margin-bottom: 100px;
 }
 
 .cube{
@@ -202,7 +207,8 @@ a {
 #HTML{
   left: 100px;
   bottom: 80px;
-  background-image: url("c-logo.png");
+  background-image: url("html-square.png");
+  /* background-image: url("cpp-logo.png"); */
   background-size: cover;
   background-color: rgb(165,96,231);
   box-shadow: -60px 60px 20px rgb(50 50 50/ 15%);
@@ -214,6 +220,58 @@ a {
 #HTML:after {
   background-color: rgb(205, 188, 221);
 }
+
+#CSS{
+  left: 250px;
+  bottom: 240px;
+  background-image: url("css-square.png");
+  /* background-image: url("cpp-logo.png"); */
+  background-size: cover;
+  background-color: rgb(227,119,191);
+  box-shadow: -100px 100px 20px rgb(50 50 50/ 15%);
+}
+#CSS:before {
+  background-color: rgb(221, 154, 207);
+}
+
+#CSS:after {
+  background-color: rgb(221, 188, 211);
+}
+
+#Cpp{
+  left: 450px;
+  bottom: 200px;
+  background-image: url("cpp-logo.png");
+  /* background-image: url("cpp-logo.png"); */
+  background-size: cover;
+  background-color: rgb(119, 227, 186);
+  box-shadow: -40px 40px 20px rgb(50 50 50/ 15%);
+}
+#Cpp:before {
+  background-color: rgb(154, 221, 202);
+}
+
+#Cpp:after {
+  background-color: rgb(188, 221, 212);
+}
+
+#PYTHON{
+  left: 350px;
+  bottom: 40px;
+  background-image: url("py-logo.png");
+  /* background-image: url("cpp-logo.png"); */
+  background-size: cover;
+  background-color: rgb(119, 193, 227);
+    box-shadow: -80px 80px 20px rgb(50 50 50/ 15%);
+}
+#PYTHON:before {
+background-color: rgb(154, 189, 221);
+}
+
+#PYTHON:after {
+ background-color: rgb(188, 200, 221);
+}
+
 footer {
     display: flex;
     justify-content: center;
@@ -229,5 +287,12 @@ footer {
     width: 48%;
     margin: 1%;
     height: 600px;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+/* Anything under 1300 */
+  .hero-image{
+    display:none;
   }
 }
