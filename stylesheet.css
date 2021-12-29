@@ -71,6 +71,11 @@ a {
   outline:0;
 }
 
+/* .bar{width:100%;overflow:hidden}
+.bar{white-space:normal}
+.bar:before,.bar:after{content:"";display:table;clear:both}
+.bar{position:static;float:left} */
+
 .button{
   border:none;
   display:inline-block;
