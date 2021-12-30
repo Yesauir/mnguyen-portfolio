@@ -1,9 +1,3 @@
-// /*Bro CTRL SHIFT I is sick on the browser*/
-// const switchElement = document.querySelector('.switch')
-
-// switchElement.addEventListener('click',() => {
-//   document.body.classList.toggle('dark')
-// })
 
 
 /*================================================
@@ -13,6 +7,13 @@ Polyfill
 ================================================*/
 
 (function(){ 'use strict';
+
+// /*Bro CTRL SHIFT I is sick on the browser put this in function...*/
+const switchElement = document.querySelector('.switch')
+
+switchElement.addEventListener('click',() => {
+  document.body.classList.toggle('dark')
+})
 
   /*================================================
 
