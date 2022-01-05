@@ -53,7 +53,7 @@ a {
 
 /* .fa-user:before{content:"\f007"}
 .fa-users:before{content:"\f0c0"}
-.fa-user-md:before{content:"\f0f0"} */
+.fa-user-md:before{content:"\f0f0"} icons/symbols */
 
 .top{
   position:fixed;
@@ -74,7 +74,7 @@ a {
 /* .bar{width:100%;overflow:hidden}
 .bar{white-space:normal}
 .bar:before,.bar:after{content:"";display:table;clear:both}
-.bar{position:static;float:left} */
+.bar{position:static;float:left} from W3 test..*/
 
 .button{
   border:none;
@@ -159,7 +159,7 @@ a {
 .square{
   width: 98%;
   height: 350px;
-  background-color: rgb(244, 241, 241);; /*Comment this out later*/
+  background-color: rgb(244, 241, 241);
   text-align: center;
   margin: 1%;
 
@@ -167,6 +167,11 @@ a {
 
 .dark .square{
   background-color: rgb(71, 71, 71);
+}
+
+/*Used this to adjust the title in dark mode Snake game, before title blended in with white modal box.*/
+.dark .modalSnakes{
+  color: rgb(71, 71, 71);
 }
 
 .sub-section{
@@ -293,6 +298,15 @@ footer {
   color:#000!important;
   background-color:#ccc!important;
 }
+
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+
 
 @media only screen and (min-width: 970px){
   .main-text{
